@@ -87,7 +87,7 @@ na auth login
 na doctor --json
 ```
 
-For staging or custom gateways:
+For staging or custom API endpoints:
 
 ```bash
 na --profile staging auth login --base-url https://staging.neuroartist.ru

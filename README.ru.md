@@ -1,4 +1,4 @@
-# NeuroArtist API Skill
+# НейроХудожник API Skill
 
 [![Validate Skill](https://github.com/CroissanStudioDev/neuroartist-api-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/CroissanStudioDev/neuroartist-api-skill/actions/workflows/validate.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
@@ -6,7 +6,7 @@
 
 [English](README.md) | Русский
 
-Переносимый Agent Skill для генерации, редактирования, анимации и итерации AI-изображений и видео через Neuroartist API с помощью agent-friendly CLI `na`.
+Переносимый Agent Skill для генерации, редактирования, анимации и итерации AI-изображений и видео через НейроХудожник API с помощью agent-friendly CLI `na`.
 
 Скилл рассчитан на Cursor, Claude Code, Codex, OpenCode, OpenClaw/OpenCloud-style клиенты, Windsurf, Gemini CLI, `npx skills`, `skillpm` и другие инструменты, которые поддерживают формат Agent Skills `SKILL.md`.
 
@@ -74,8 +74,8 @@ cp -R skills/neuroartist-media .agents/skills/neuroartist-media
 
 - Node.js/npm, если Neuroartist CLI устанавливается из npm.
 - Neuroartist CLI: `npm install -g @neuroartist/cli`.
-- Neuroartist API key, настроенный через `na auth login`.
-- Доступ к сети и выбранному Neuroartist API.
+- API key НейроХудожник API, настроенный через `na auth login`.
+- Доступ к сети и выбранному endpoint НейроХудожник API.
 - Агент-клиент с поддержкой формата Agent Skills `SKILL.md`.
 
 ## Настройка CLI
@@ -87,7 +87,7 @@ na auth login
 na doctor --json
 ```
 
-Для staging или кастомных gateway:
+Для staging или кастомных API endpoints:
 
 ```bash
 na --profile staging auth login --base-url https://staging.neuroartist.ru
