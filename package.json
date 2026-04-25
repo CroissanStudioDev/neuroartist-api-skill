@@ -1,7 +1,7 @@
 {
   "name": "@croissanstudio/neuroartist-api-skill",
   "version": "1.0.0",
-  "description": "Agent Skill for generating images and videos through the Neuroartist API using the na CLI.",
+  "description": "Agent Skill for generating, editing, and animating images/videos through the Neuroartist API using the na CLI.",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -13,7 +13,12 @@
     "neuroartist",
     "image-generation",
     "video-generation",
+    "text-to-image",
+    "text-to-video",
     "ai-media",
+    "api",
+    "cli",
+    "queue",
     "cursor",
     "claude-code",
     "codex",
@@ -29,6 +34,7 @@
   "homepage": "https://github.com/CroissanStudioDev/neuroartist-api-skill#readme",
   "files": [
     "README.md",
+    "README.ru.md",
     "PUBLISHING.md",
     "LICENSE",
     "skills/"
