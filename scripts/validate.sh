@@ -18,6 +18,10 @@ info "Checking skill layout"
 [[ -d "$SKILL_DIR" ]] || fail "Missing skill directory: $SKILL_DIR"
 [[ -f "$SKILL_FILE" ]] || fail "Missing SKILL.md: $SKILL_FILE"
 [[ -d "$SKILL_DIR/references" ]] || fail "Missing references directory"
+[[ -f "$ROOT_DIR/README.md" ]] || fail "Missing README.md"
+[[ -f "$ROOT_DIR/PUBLISHING.md" ]] || fail "Missing PUBLISHING.md"
+[[ -f "$ROOT_DIR/LICENSE" ]] || fail "Missing LICENSE"
+[[ -f "$ROOT_DIR/package.json" ]] || fail "Missing package.json"
 
 info "Checking required reference files"
 for file in prompting.md model-selection.md workflows.md examples.md install.md; do
@@ -73,6 +77,31 @@ if len(body_lines) > 500:
     raise SystemExit("ERROR: SKILL.md body exceeds 500 lines")
 
 print("Frontmatter OK")
+PY
+
+info "Checking package metadata"
+python3 - "$ROOT_DIR/package.json" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+package_file = Path(sys.argv[1])
+data = json.loads(package_file.read_text(encoding="utf-8"))
+
+if data.get("name") != "@croissanstudio/neuroartist-api-skill":
+    raise SystemExit("ERROR: unexpected package name")
+if data.get("version") != "1.0.0":
+    raise SystemExit("ERROR: package version must match current skill version")
+if data.get("license") != "MIT":
+    raise SystemExit("ERROR: package license must be MIT")
+keywords = set(data.get("keywords", []))
+if "agent-skill" not in keywords:
+    raise SystemExit("ERROR: package keywords must include agent-skill")
+files = set(data.get("files", []))
+if "skills/" not in files:
+    raise SystemExit("ERROR: package files must include skills/")
+
+print("Package metadata OK")
 PY
 
 info "Checking for obvious secrets"

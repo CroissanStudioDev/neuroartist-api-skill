@@ -1,0 +1,42 @@
+{
+  "name": "@croissanstudio/neuroartist-api-skill",
+  "version": "1.0.0",
+  "description": "Agent Skill for generating images and videos through the Neuroartist API using the na CLI.",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "keywords": [
+    "agent-skill",
+    "agent-skills",
+    "skill",
+    "skills",
+    "neuroartist",
+    "image-generation",
+    "video-generation",
+    "ai-media",
+    "cursor",
+    "claude-code",
+    "codex",
+    "opencode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CroissanStudioDev/neuroartist-api-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CroissanStudioDev/neuroartist-api-skill/issues"
+  },
+  "homepage": "https://github.com/CroissanStudioDev/neuroartist-api-skill#readme",
+  "files": [
+    "README.md",
+    "PUBLISHING.md",
+    "LICENSE",
+    "skills/"
+  ],
+  "scripts": {
+    "validate": "bash scripts/validate.sh"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

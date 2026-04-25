@@ -164,6 +164,17 @@ Optional external validator, when available:
 RUN_SKILLS_REF=1 ./scripts/validate.sh
 ```
 
+## Publish to Marketplaces
+
+See [PUBLISHING.md](PUBLISHING.md) for the full marketplace matrix and submission instructions for:
+
+- `npx skills` / skills.sh-style GitHub registries
+- Agent Skill Hub / `skhub`
+- SkillRepo-style registries
+- mdskills.ai
+- npm / `skillpm`
+- Cursor, Claude Code, Codex, OpenCode, and vendor-neutral `.agents/skills`
+
 ## Marketplace Listing
 
 Suggested listing fields:
