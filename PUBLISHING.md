@@ -15,7 +15,7 @@ Before submitting to any registry:
 - `skills/neuroartist-media/SKILL.md` exists.
 - `name: neuroartist-media` matches the directory name.
 - `description` is plain text, specific, and under 1024 characters.
-- `license: MIT` is present.
+- `license: Apache-2.0` is present.
 - `compatibility` describes runtime requirements and stays under 500 characters.
 - `metadata` includes author, version, category, tags, homepage, and repository.
 - Supporting docs are under `references/` one level deep.
@@ -31,7 +31,7 @@ Use these fields when a marketplace asks for manual listing data:
 - Skill slug: `neuroartist-media`
 - Repository: `https://github.com/CroissanStudioDev/neuroartist-api-skill`
 - Skill path: `skills/neuroartist-media`
-- License: MIT
+- License: Apache-2.0
 - Category: Media generation
 - Tags: `neuroartist`, `image-generation`, `video-generation`, `ai-media`, `cli`, `api`, `queue`
 - Requirements: Neuroartist `na` CLI, Neuroartist API key, network access
@@ -81,7 +81,7 @@ npx skills add CroissanStudioDev/neuroartist-api-skill --skill neuroartist-media
    - Skill: `neuroartist-media`
    - Category: Media generation
    - Tags: from Current Listing Metadata
-   - License: MIT
+   - License: Apache-2.0
 
 3. After approval, test normal install:
 

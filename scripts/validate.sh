@@ -92,8 +92,8 @@ if data.get("name") != "@croissanstudio/neuroartist-api-skill":
     raise SystemExit("ERROR: unexpected package name")
 if data.get("version") != "1.0.0":
     raise SystemExit("ERROR: package version must match current skill version")
-if data.get("license") != "MIT":
-    raise SystemExit("ERROR: package license must be MIT")
+if data.get("license") != "Apache-2.0":
+    raise SystemExit("ERROR: package license must be Apache-2.0")
 keywords = set(data.get("keywords", []))
 if "agent-skill" not in keywords:
     raise SystemExit("ERROR: package keywords must include agent-skill")

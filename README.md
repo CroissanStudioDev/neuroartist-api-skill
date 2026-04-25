@@ -183,7 +183,7 @@ Suggested listing fields:
 - Slug: `neuroartist-media`
 - Category: Media generation
 - Tags: `neuroartist`, `image-generation`, `video-generation`, `ai-media`, `cli`, `api`
-- License: MIT
+- License: Apache-2.0
 - Repository: `https://github.com/CroissanStudioDev/neuroartist-api-skill`
 - Install command: `npx skills add CroissanStudioDev/neuroartist-api-skill --skill neuroartist-media`
 
@@ -202,4 +202,4 @@ Generate, edit, animate, and iterate on AI images and videos through the Neuroar
 
 ## License
 
-MIT
+Apache-2.0

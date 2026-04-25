@@ -2,7 +2,7 @@
   "name": "@croissanstudio/neuroartist-api-skill",
   "version": "1.0.0",
   "description": "Agent Skill for generating images and videos through the Neuroartist API using the na CLI.",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "private": false,
   "type": "module",
   "keywords": [

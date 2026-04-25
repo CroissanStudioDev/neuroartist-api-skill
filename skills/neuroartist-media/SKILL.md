@@ -2,7 +2,7 @@
 name: neuroartist-media
 description: Generate, edit, animate, and iterate on AI images/videos through the Neuroartist API using the `na` CLI. Use when the user asks for Neuroartist media generation, text-to-image, image-to-image, text-to-video, image-to-video, model discovery, cost estimates, queue status, or result downloads.
 version: "1.0.0"
-license: MIT
+license: Apache-2.0
 compatibility: Works with Cursor, Claude Code, Codex, OpenCode, OpenClaw/OpenCloud-style clients, Windsurf, Gemini CLI, and other Agent Skills compatible clients. Requires the Neuroartist `na` CLI, network access, and a configured Neuroartist API key.
 metadata:
   author: neuroartist
